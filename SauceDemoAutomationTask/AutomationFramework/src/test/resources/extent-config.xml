@@ -23,12 +23,12 @@
 
 
         <!-- title of the document -->
-        <documentTitle>careDX Automation </documentTitle>
+        <documentTitle>Automation </documentTitle>
 
         <!-- report name - displayed at top-nav -->
         <reportName>Automated Test Report</reportName>
 
-        <develpedBy>careDX</develpedBy>
+        <develpedBy>Naga</develpedBy>
 
         <!-- timestamp format -->
         <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>

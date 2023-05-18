@@ -12,6 +12,7 @@ Feature: Add To Cart the Highest Priced Product
     And Add the selected highest price product to the cart
     Then Verify product is added to shopping cart
 
+    #Negative scenario - to capture screenshot just for demo purpose
   Scenario: TC 02 - Negative Scenario to capture the error screenshot and to display in reports
     When User enters username and password in Swag login page
     And Click on Login button
