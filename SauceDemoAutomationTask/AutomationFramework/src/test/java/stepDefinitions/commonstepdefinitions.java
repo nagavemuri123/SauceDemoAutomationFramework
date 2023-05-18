@@ -62,6 +62,15 @@ public class commonstepdefinitions {
         }
     }
 
+    @Then("Verify Swag Labs Home page is displayed-Intentionally failed to capture screenshot")
+    public void verifySwagLabsHomePage() throws IOException {
+        try {
+            homePage.verifyHomePageInvalid();
+        } catch (Exception e) {
+            Assert.fail("Failed to verify home page :" + e.getMessage());
+        }
+    }
+
     @And("Verify products listed in Home page")
     public void verifyProductsListedInHomePage() {
         try {

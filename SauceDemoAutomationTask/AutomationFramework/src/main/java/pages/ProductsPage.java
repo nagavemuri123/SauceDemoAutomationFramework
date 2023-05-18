@@ -19,6 +19,9 @@ public class ProductsPage extends BaseFactory {
     @FindBy(xpath = "//div[@class='app_logo' and text()='Swag Labs']")
     private WebElement homePage;
 
+    @FindBy(xpath = "//div[@class='app_logo' and text()='Swag Lab']")
+    private WebElement homePageInvalidElement;
+
     @FindBy(xpath = "//div[@class='inventory_item_price']")
     private List<WebElement> productPrices;
 
@@ -32,6 +35,10 @@ public class ProductsPage extends BaseFactory {
 
     public void verifyHomePage() throws IOException {
         waitUntilVisible(driver, homePage);
+    }
+
+    public void verifyHomePageInvalid() throws IOException {
+        waitUntilVisible(driver, homePageInvalidElement);
     }
 
     public void verifyProductsListed() throws IOException {
